@@ -3,7 +3,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     height: 100vh;
-    background: #333 url('https://image.ibb.co/n5A2HU/showcase.jpg') no-repeat center center / cover;
+    background: #333 url('backgroundImg.jpg') no-repeat center center / cover;
     color: #ccc;
     overflow: hidden;
 }
