@@ -6,14 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Me</title>
+<link rel="stylesheet" href="style.css">
+<!--Side Nav Styling-->
+<style>
+/* body {
+font-family: "Lato", sans-serif;
+} */
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color:rgba(0, 0, 255, 0.3);
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+text-align: center;
+}
+
+.sidenav a {
+padding: 100px 8px 8px 32px;
+text-decoration: none;
+font-size: 65px;
+font-weight: 100;
+color:white;
+display: block;
+transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+color:darkgray;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: -95px;
+right: 25px;
+font-size: 75px;
+margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {
+padding-top: 15px;
+}
+
+.sidenav a {
+font-size: 18px;
+}
+}
+</style>
+<!--Side Nav Style Ending-->
 </head>
 
 <body>
-    <p>
-        <a href="https://www.linkedin.com/in/frank-barrios/">
-            <img src="1.png" alt="LinkedIn" height="750" width="1550">
-        </a>
-    </p>
+<!--Side Nav Bar Start-->
+<div id="mySidenav" class="sidenav">
+    <!--This operator allows evaluating expressions that produce a value into places where an 
+            expression that evaluates to undefined is desired.
+
+            The void operator is often used merely to obtain the undefined primitive value, usually using "void(0)" 
+            (which is equivalent to "void 0"). In these cases, the global variable undefined can be used instead 
+            (assuming it has not been assigned to a non-default value).-->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#">Contact</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+    //Opens Menu by increasing width to 100%
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    //Closes the menu by decreasing width to 0
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+<!--Side Nav Bar Ending-->
 </body>
 
 </html>
