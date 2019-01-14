@@ -1,5 +1,5 @@
 html {
-    background-color: #f3f3f3;
+    background-color: black;
 }
 
 .form-login {
@@ -22,7 +22,7 @@ html {
 .form-log-in-with-email .form-white-background {
     width: 570px;
     box-sizing: border-box;
-    background-color: darkcyan;
+    background-color: white;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     padding: 60px 80px;
     margin-bottom: 32px;
