@@ -5,112 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
+    <title>Contact2</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact2Styles.css">
     <link rel="icon" type="image/png" href="Img/favIcon2.png">
-    <!--Side Nav Styling-->
-    <style>
-         body {
-font-weight: 100;
-} 
 
-        .sidenav {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: rgba(0, 0, 0, 0.3);
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-            text-align: center;
-        }
-
-        .sidenav a {
-            padding: 100px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 65px;
-            font-weight: 100;
-            color: white;
-            display: block;
-            transition: 0.3s;
-
-        }
-
-        .sidenav a:hover {
-            color: darkgray;
-        }
-
-        .sidenav .closebtn {
-            position: absolute;
-            top: -95px;
-            right: 25px;
-            font-size: 75px;
-            margin-left: 50px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {
-                padding-top: 15px;
-            }
-
-            .sidenav a {
-                font-size: 18px;
-            }
-        }
-    </style>
-    <!--Side Nav Style Ending-->
-
-<!--Contact Form Styling Start-->
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    input[type=text],
-    select,
-    textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-    }
-
-    input[type=submit] {
-        background-color: gray;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-margin: 0 auto;
-display: block;
-    }
-
-    input[type=submit]:hover {
-background-color: darkgray;
-    }
-
-    .container {
-        border-radius: 25px;
-        background-color: #f2f2f2;
-        padding: 60px;
-        width: 37%;
-        height: 79%;
-        margin: auto;
-    }
-</style>
-<!--Contact Form Stylingn End-->
 </head>
 
 <body>
@@ -142,30 +41,52 @@ background-color: darkgray;
         }
     </script>
     <!--Side Nav Bar Ending-->
-    
-<h3 style="text-align: center; font-size: x-large; color: white;font-weight: 100;">Contact Form</h3>
 
-<div class="container">
-    <form action="contactSubmitted.html">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-        <label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-        </select>
-
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-        <input type="submit" value="Submit">
-    </form>
-</div>
+    <!--Form Start-->
+    <div class="container">
+        <form action="contactSubmitted.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="australia">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">Mexico</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <!--Form End-->
 </body>
 
 </html>
