@@ -1,6 +1,7 @@
 /********************************************************************************************/
 /*TypeWriter Effect*/
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
 body {
     font-family: 'Raleway', sans-serif;
     height: 100vh;
@@ -18,7 +19,8 @@ body {
     padding: 300px 3rem;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: 200;
     margin: 0.4rem;
 }
@@ -48,6 +50,7 @@ h2 {
     .container {
         padding: 0 1rem;
     }
+
     h1 {
         font-size: 3rem;
     }
@@ -57,6 +60,7 @@ h2 {
     h1 {
         font-size: 2.5rem;
     }
+
     h2 {
         font-size: 1.5rem;
     }
@@ -87,125 +91,130 @@ h2 {
 
 /**********************************************************************************/
 /*Side Nav Starts Here*/
- .sidenav {
-     height: 100%;
-     width: 0;
-     position: fixed;
-     z-index: 1;
-     top: 0;
-     left: 0;
-     background-color: rgba(0, 0, 0, 0.8);
-     overflow-x: hidden;
-     transition: 0.5s;
-     padding-top: 60px;
-     text-align: center;
- }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
 
- .sidenav a {
-     padding: 65px 8px 8px 32px;
-     text-decoration: none;
-     font-size: 65px;
-     font-weight: 100;
-     color: white;
-     display: block;
-     transition: 0.3s;
+.sidenav a {
+    padding: 65px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 65px;
+    font-weight: 100;
+    color: white;
+    display: block;
+    transition: 0.3s;
 
- }
+}
 
- .sidenav a:hover {
-     color: darkgray;
- }
+.sidenav a:hover {
+    color: darkgray;
+}
 
- .sidenav .closebtn {
-     position: absolute;
-     top: -95px;
-     right: 25px;
-     font-size: 75px;
-     margin-left: 50px;
- }
+.sidenav .closebtn {
+    position: absolute;
+    top: -95px;
+    right: 25px;
+    font-size: 75px;
+    margin-left: 50px;
+}
 
- @media screen and (max-height: 450px) {
-     .sidenav {
-         padding-top: 15px;
-     }
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
-     .sidenav a {
-         font-size: 18px;
-     }
- }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
 
 
- /*************************************************************************************/
- /*Form Styling*/
- /* Style inputs, select elements and textareas */
- input[type=text],
- select,
- textarea {
-     width: 100%;
-     padding: 12px;
-     border: 1px solid #ccc;
-     border-radius: 4px;
-     box-sizing: border-box;
-     resize: vertical;
- }
+/*************************************************************************************/
+/*Form Styling*/
+/* Style inputs, select elements and textareas */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
 
- /* Style the label to display next to the inputs */
- label {
-     padding: 12px 12px 12px 0;
-     display: inline-block;
- }
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
 
- /* Style the submit button */
- input[type=submit] {
-     background-color: #4CAF50;
-     color: white;
-     padding: 12px 20px;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-     float: right;
- }
+/* Style the submit button */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
 
- /* Style the container */
- .container {
-     border-radius: 25px;
-     background-color: #f2f2f2;
-     padding: 20px;
-     width: 45%;
-     margin: auto;
-     position: absolute;
-     margin-top: 6%;
-     margin-left: 25%;
- }
+/* Style the container */
+.container {
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    /* width: 45%;
+    margin: auto;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 25%; */
+}
 
- /* Floating column for labels: 25% width */
- .col-25 {
-     float: left;
-     width: 15%;
-     margin-top: 6px;
- }
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
 
- /* Floating column for inputs: 75% width */
- .col-75 {
-     float: left;
-     width: 75%;
-     margin-top: 6px;
- }
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
 
- /* Clear floats after the columns */
- .row:after {
-     content: "";
-     display: table;
-     clear: both;
- }
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
- /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
- @media screen and (max-width: 600px) {
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    /* position: initial;
+    margin: initial;
+    margin-top: initial;
+    margin-left: initial;
+    width: initial; */
 
-     .col-25,
-     .col-75,
-     input[type=submit] {
-         width: 100%;
-         margin-top: 0;
-     }
- }
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
