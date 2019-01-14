@@ -218,3 +218,13 @@ input[type=submit] {
         margin-top: 0;
     }
 }
+
+@media(max-width: 800px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .formHeader {
+        font-size: 3rem;
+    }
+}

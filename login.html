@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginForm.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--Side Nav Bar Start-->
+    <div id="mySidenav" class="sidenav">
+        <!--This operator allows evaluating expressions that produce a value into places where an 
+            expression that evaluates to undefined is desired.
+
+            The void operator is often used merely to obtain the undefined primitive value, usually using "void(0)" 
+            (which is equivalent to "void 0"). In these cases, the global variable undefined can be used instead 
+            (assuming it has not been assigned to a non-default value).-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+    <script>
+        //Opens Menu by increasing width to 100%
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    //Closes the menu by decreasing width to 0
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+    <!--Side Nav Bar Ending-->
+
+    <div class="main-content">
+
+        <!-- You only need this form and the form-login.css -->
+
+        <form class="form-login" method="post" action="#">
+
+            <div class="form-log-in-with-email">
+
+                <div class="form-white-background">
+
+                    <div class="form-title-row">
+                        <h1>Log in</h1>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" name="password">
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="submit">Log in</button>
+                    </div>
+
+                </div>
+
+                <a href="#" class="form-forgotten-password">Forgotten password &middot;</a>
+                <a href="#" class="form-create-an-account">Create an account &rarr;</a>
+
+            </div>
+
+            <div class="form-sign-in-with-social">
+
+                <div class="form-row form-title-row">
+                    <span class="form-title">Sign in with</span>
+                </div>
+
+                <a href="#" class="form-google-button">Google</a>
+                <a href="#" class="form-facebook-button">Facebook</a>
+                <a href="#" class="form-twitter-button">Twitter</a>
+
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
