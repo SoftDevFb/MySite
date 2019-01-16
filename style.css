@@ -35,7 +35,7 @@ h2 {
 }
 
 /* Cursor */
-
+/*Creating right side of border should give a cursor effect*/
 .txt-type>.txt {
     border-right: 0.2rem solid #777;
 }
