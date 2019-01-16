@@ -1,3 +1,4 @@
+//Partial credit to an online course I took this past break
 class TypeWriter {
     constructor(txtElement, words, wait = 3000) {
         //Text Element that is passed in
@@ -53,7 +54,7 @@ class TypeWriter {
             // Pause before start typing
             typeSpeed = 500;
         }
-
+        //Helps pace the type effect
         setTimeout(() => this.type(), typeSpeed);
     }
 }
