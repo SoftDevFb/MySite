@@ -12,11 +12,12 @@ body {
 }
 
 .container1 {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 75%;
-    padding: 300px 3rem;
+    padding: 50px 3rem;
 }
 
 h1,
