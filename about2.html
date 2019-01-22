@@ -1,0 +1,485 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Frankie Barrios</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="icon" type="image/png" href="Img/favIcon2.png">
+
+</head>
+
+<body style="background: black url('Img/backgroundImg.jpeg') no-repeat center center;">
+    <!--Side Nav Bar Start-->
+    <div id="mySidenav" class="sidenav">
+        <style>
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.8);
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 30px;
+                text-align: center;
+            }
+
+            .sidenav a {
+                padding: 65px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 65px;
+                font-weight: 100;
+                color: white;
+                display: block;
+                transition: 0.3s;
+
+            }
+
+            .sidenav a:hover {
+                color: darkgray;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: -95px;
+                right: 25px;
+                font-size: 75px;
+                margin-left: 50px;
+            }
+
+            @media screen and (max-height: 450px) {
+                .sidenav {
+                    padding-top: 15px;
+                }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+            }
+        </style>
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" style="font-size: 65px;">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about2.html">Resume</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()">&#9776; Menu</span>
+
+    <script>
+        //Opens Menu by increasing width to 100%
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        //Closes the menu by decreasing width to 0
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <!--Side Nav Bar Ending-->
+
+    <h1 style="color:white; text-align: center; font-weight: 100; font-size: 55px;">Resume</h1>
+    <div id="resume" style="color: white; background-color: black;">
+        <header id="header">
+            <img src="profilePic.jpg" alt="Frankie Barrios" />
+            <div class="middle">
+                <h1 class="name">Frankie Barrios</h1>
+                <h2 class="label">Software Engineer</h2>
+            </div>
+        </header>
+        <section id="basics">
+            <div id="location">
+                <span class="fa fa-map-marker"></span>
+                <span class="address">
+                    637 North West Ave.,
+                </span>
+                <span class="postalCode">
+                    65802,
+                </span>
+                <span class="city">
+                    Springfield
+                </span>
+                <span class="countryCode">
+                    (US),
+                </span>
+                <span class="region">
+                    MO
+                </span>
+            </div>
+            <div id="contact">
+                <div class="website">
+                    <a href="https://frankiebarrios.com/">My Website -- https://frankiebarrios.com/</a>
+                </div>
+
+                <div class="phone">
+                    <span class="fa fa-phone-square"></span>
+                    (417) 631-3528
+                </div>
+            </div>
+            <div id="profiles">
+                <div class="item">
+                    <span class="network fa fa-linkedin linkedin"></span>
+                    <span class="username">
+                        <span class="url">
+                            <a href="https://www.linkedin.com/in/frank-barrios/">LinkedIn</a>
+                        </span>
+                    </span>
+                </div>
+                <div class="item">
+                    <span class="network fa fa-github github"></span>
+                    <span class="username">
+                        <span class="url">
+                            <a href="https://github.com/SoftDevFb">SoftDevFb</a>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </section>
+        </section>
+        </section>
+        <section class="section">
+            <h2 class='section-title'>Experience</h2>
+            <section id="work">
+                <header>
+                    <h3 class="name">
+                        Cart32
+                    </h3>
+                    <div class="date">
+                        <span class="startDate">
+                            June 2018
+                        </span>
+                        <span class="endDate">
+                            - November 2018
+                        </span>
+                    </div>
+                </header>
+                <div class="item">
+                    <div class="position">
+                        Programming and IT Support
+                    </div>
+                    <div class="website">
+                        <a href="https://www.cart32.com/">https://www.cart32.com/</a>
+                    </div>
+                    <div class="summary">
+                        <p>Custom websites, mobile apps for iPhone and Android, web applications and more. IT support,
+                            Sales and Programming.</p>
+                    </div>
+                    <ul class="highlights">
+                        <li>Design, build, deploy, and maintain custom web platforms</li>
+                        <li>Investigate and employ new technologies</li>
+                        <li>Provide hosting infrastructure</li>
+
+                    </ul>
+                </div>
+                <header>
+                    <h3 class="name">
+                        Bass Pro Shops
+                    </h3>
+                    <div class="date">
+                        <span class="startDate">
+                            April 2018
+                        </span>
+                        <span class="endDate">
+                            - June 2018
+                        </span>
+                    </div>
+                </header>
+                <div class="item">
+                    <div class="position">
+                        General IT Temp
+                    </div>
+                    <div class="website">
+                        <a href="https://www.basspro.com/shop/en">https://www.basspro.com/shop/en</a>
+                    </div>
+                </div>
+
+                <header>
+                    <h3 class="name">
+                        Mercy Hospital Springfield
+                    </h3>
+                    <div class="date">
+                        <span class="startDate">
+                            April 2016
+                        </span>
+                        <span class="endDate">
+                            - March 2018
+                        </span>
+                    </div>
+                </header>
+                <div class="item">
+                    <div class="position">
+                        Scheduling Coordinator
+                    </div>
+                    <div class="website">
+                        <a href="https://www.mercy.net/">https://www.mercy.net/</a>
+                    </div>
+                    <div class="summary">
+                        <p>Coordinated appointment times for patients and medical practitioners.</p>
+                    </div>
+                </div>
+
+                <header>
+                    <h3 class="name">
+                        Affiliated Acceptance Corporation
+                    </h3>
+                    <div class="date">
+                        <span class="startDate">
+                            Feb 2009
+                        </span>
+                        <span class="endDate">
+                            - May 2015
+                        </span>
+                    </div>
+                </header>
+                <div class="item">
+                    <div class="position">
+                        IT Support Technician
+                    </div>
+                    <div class="summary">
+                        <p>Worked with clients remotely installing our software on their machines, training clients and
+                            staff to utilize the
+                            software, troubleshooting any issues they may have encountered, and installing new hardware
+                            for clients to operate with
+                            the software our company developed. Also provided in house training , setup of new
+                            workstation for new employees, and
+                            any technical support needs in house staff may have required.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="section">
+            <h2 class='section-title'>Education</h2>
+            <section id="education">
+                <header>
+                    <h3 class="institution">
+                        Ozarks Technical Community College
+                    </h3>
+                    <div class="date">
+                        <span class="startDate">
+                            2017
+                        </span>
+                        <span class="endDate">
+                            - 2019
+                        </span>
+                    </div>
+                </header>
+                <div class="item">
+                    <div class="studyType">
+                        Associate of Applied Science
+                    </div>
+                    <div class="area">
+                        Computer Information Science
+                    </div>
+                </div>
+                <header>
+                    <h3 class="institution">
+                        Columbia College
+                    </h3>
+                    <div class="date">
+                        <span class="startDate">
+                            2013
+                        </span>
+                        <span class="endDate">
+                            - 2015
+                        </span>
+                    </div>
+                </header>
+                <div class="item">
+                    <div class="studyType">
+                        Pre Med Studies
+                    </div>
+                    <div class="area">
+                        Biology
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="section">
+            <h2 class='section-title'>Certifications</h2>
+            <section id="education">
+                <header>
+                    <h3 class="institution">
+                        Ozarks Technical Community College
+                    </h3>
+
+                </header>
+                <div class="item">
+
+                    <div class="area">
+                        Certificate of Achievement in Computer Information Science
+                    </div>
+                    <div class="website">
+                        <a href="https://catalog.otc.edu/preview_program.php?catoid=2&poid=224&returnto=119">See
+                            Certificate</a>
+                    </div>
+                </div>
+                <header>
+                    <h3 class="institution">
+                        Ozarks Technical Community College
+                    </h3>
+
+                </header>
+                <div class="item">
+
+                    <div class="area">
+                        Certificate of Specialization in Web Development
+                    </div>
+                    <div class="website">
+                        <a href="https://catalog.otc.edu/preview_program.php?catoid=6&poid=679">See Certificate</a>
+                    </div>
+                </div>
+
+                <header>
+                    <h3 class="institution">
+                        Ozarks Technical Community College
+                    </h3>
+
+                </header>
+                <div class="item">
+
+                    <div class="area">
+                        Certificate of Specialization in Computer Programming
+                    </div>
+                    <div class="website">
+                        <a href="https://catalog.otc.edu/preview_program.php?catoid=6&poid=677">See Certificate</a>
+                    </div>
+                </div>
+
+                <header>
+                    <h3 class="institution">
+                        Microsoft
+                    </h3>
+
+                </header>
+                <div class="item">
+
+                    <div class="area">
+                        MTA: Software Development Fundamentals
+                    </div>
+                    <div class="website">
+                        <a href="https://www.youracclaim.com/badges/5fc50f25-ee65-4aab-bf6e-8953de15e791/linked_in_profile">See
+                            Certificate</a>
+                    </div>
+                </div>
+
+                <header>
+                    <h3 class="institution">
+                        Microsoft
+                    </h3>
+
+                </header>
+                <div class="item">
+
+                    <div class="area">
+                        MTA: Database Administration Fundamentals
+                    </div>
+                    <div class="website">
+                        <a href="https://www.youracclaim.com/badges/5fc50f25-ee65-4aab-bf6e-8953de15e791/linked_in_profile">See
+                            Certificate</a>
+                    </div>
+                </div>
+
+                <header>
+                    <h3 class="institution">
+                        Microsoft
+                    </h3>
+
+                </header>
+                <div class="item">
+
+                    <div class="area">
+                        MTA: Introduction to Programming Using HTML and CSS
+                    </div>
+                    <div class="website">
+                        <a href="https://www.youracclaim.com/badges/ac1e47d1-5c7e-4754-ad1c-97ffcef32781/linked_in_profile">See
+                            Certificate</a>
+                    </div>
+                </div>
+
+                <header>
+                    <h3 class="institution">
+                        Microsoft
+                    </h3>
+
+                </header>
+                <div class="item">
+
+                    <div class="area">
+                        MTA: Introduction to Programming Using JavaScript
+                    </div>
+                    <div class="website">
+                        <a href="https://www.youracclaim.com/badges/0108093b-bef4-4e80-ae2d-50c4c1c13846/linked_in_profile">See
+                            Certificate</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="section">
+            <h2 class='section-title'>Skills</h2>
+            <section id="skills">
+                <div class="item">
+                    <div class="name">
+                        Web Development
+                    </div>
+                    <div class="level intermediate">
+                        <em>Intermedate</em>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="keywords">
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Node JS</li>
+                        <li>HTML/CSS</li>
+                        <li>MySQL</li>
+                        <li>Vue</li>
+                        <li>ASP.NET</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="name">
+                        Software Development
+                    </div>
+                    <div class="level intermediate">
+                        <em>Intermediate</em>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="keywords">
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>Python (fundamental level)</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+        <section class="section">
+            <h2 class='section-title'>Languages</h2>
+            <section id="languages">
+                <div class="item">
+                    <div class="language">
+                        English
+                    </div>
+                    <div class="fluency">
+                        <em>Native speaker</em>
+                    </div>
+                </div>
+
+
+    </div>
+    </section>
+    </section>
+
+    </div>
+</body>
+
+</html>
